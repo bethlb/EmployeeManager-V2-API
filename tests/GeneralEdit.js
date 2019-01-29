@@ -1,12 +1,9 @@
-var employeeManagerPage = {}
-
-var functions = require('../testAssets/functions')
-
-let clickByText = functions.clickByText
-let setFieldValue = functions.setFieldValue
-let verifyFieldValue = functions.verifyFieldValue
-let checkEnabled = functions.checkEnabled
-let checkDisabled = functions.checkDisabled
+let employeeManagerPage = {}
+let clickByText = require('../functions/clickByText')
+let setFieldValue = require('../functions/setFieldValue')
+let verifyFieldValue = require('../functions/verifyFieldValue')
+let checkEnabled = require('../functions/checkEnabled')
+let checkDisabled = require('../functions/checkDisabled')
 
 module.exports = {
     beforeEach: browser => {

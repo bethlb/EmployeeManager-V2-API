@@ -5,25 +5,9 @@
 
   <testsuite name="AddDeleteEmployee"
     errors="0" failures="0" hostname="" id="" package="AddDeleteEmployee" skipped="0"
-    tests="5" time="52.85" timestamp="Tue, 22 Jan 2019 02:20:05 GMT">
+    tests="5" time="73.38" timestamp="Mon, 28 Jan 2019 16:53:25 GMT">
   
-    <testcase name="QOBB-80 Verify new employee appears in left list when added" classname="AddDeleteEmployee" time="11.85" assertions="2">
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="QOBB-80 Verify new employee has correct employee number" classname="AddDeleteEmployee" time="7.137" assertions="2">
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="QOBB-80 Verify new employee field prompts have valid values" classname="AddDeleteEmployee" time="7.202" assertions="5">
-
-    
+    <testcase name="QOBB-80 Verify new employee appears in left list when added" classname="AddDeleteEmployee" time="10.52" assertions="4">
 
     
 
@@ -34,7 +18,16 @@
     
     </testcase>
   
-    <testcase name="QOBB-80 Verify new employee Save is working" classname="AddDeleteEmployee" time="11.45" assertions="6">
+    <testcase name="QOBB-80 Verify new employee has correct employee number" classname="AddDeleteEmployee" time="8.436" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="QOBB-80 Verify new employee field prompts have valid values" classname="AddDeleteEmployee" time="8.677" assertions="6">
 
     
 
@@ -49,7 +42,28 @@
     
     </testcase>
   
-    <testcase name="QOBB-80 Delete Employee" classname="AddDeleteEmployee" time="15.20" assertions="3">
+    <testcase name="QOBB-80 Verify new employee Save is working" classname="AddDeleteEmployee" time="15.29" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="QOBB-80 Delete Employee" classname="AddDeleteEmployee" time="30.46" assertions="5">
+
+    
+
+    
 
     
 

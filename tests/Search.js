@@ -1,15 +1,27 @@
-var employeeManagerPage = {}
-
-var functions = require('../testAssets/functions')
-var testData = require('../testAssets/testData')
-
-let clickByText = functions.clickByText
-let setForm = functions.setForm
-let setFieldValue = functions.setFieldValue
-let verifyFieldValue = functions.verifyFieldValue
-let verifyEmployeeInList = functions.verifyEmployeeInList
+let employeeManagerPage = {}
+let testData = require('../functions/data/testData')
+let employeeData = require('../functions/data/employees')
+let clickByText = require('../functions/clickByText')
+let setForm = require('../functions/setForm')
+let setFieldValue = require('../functions/setFieldValue')
+let verifyFieldValue = require('../functions/verifyFieldValue')
+let verifyEmployeeInList = require('../functions/verifyEmployeeInList')
+let postEmployee = require('../functions/postEmployee')
+let deleteEmployee = require('../functions/deleteEmployee')
 
 module.exports = {
+    before: browser => {
+        employeeManagerPage = browser.page.EmployeeManagerPageObject()
+        employeeManagerPage.navigate()
+            .waitForElementVisible('@employee1', 8000)
+        // Delete New Employee if one is aleady in progress
+        employeeManagerPage.deleteNewEmployee()
+        // Add employees to be used in these tests usin API
+        for (i = 4; i < 8; i++) {
+            postEmployee(employeeManagerPage.api, employeeData[i])
+        }
+    },
+
     beforeEach: browser => {
         employeeManagerPage = browser.page.EmployeeManagerPageObject()
         employeeManagerPage.navigate()
@@ -17,24 +29,15 @@ module.exports = {
     },
 
     after: browser => {
+        // Clean up remaining test employees 
+        deleteEmployee(employeeManagerPage.api, employeeData[4].id)
+        deleteEmployee(employeeManagerPage.api, employeeData[6].id)
+        deleteEmployee(employeeManagerPage.api, employeeData[7].id)
         browser.end()
     },
 
     'QOBB-60 Search results correct': browser => {
         // https://dmutah.atlassian.net/browse/QOBB-147
-
-        employeeManagerPage.deleteNewEmployee()
-
-        testData.searchData.forEach(test => {
-            clickByText(browser, ' + Add Employee ')
-            clickByText(browser, 'New Employee')
-            setFieldValue(employeeManagerPage, '@nameEntry', test.nameField)
-            setFieldValue(employeeManagerPage, '@phoneEntry', test.phoneField)
-            setFieldValue(employeeManagerPage, '@emailEntry', test.emailField)
-            setFieldValue(employeeManagerPage, '@titleEntry', test.titleField)
-            clickByText(browser, ' Save ')
-            browser.pause(2000)
-        })
 
         // Save original employee list      
         browser.elements('xpath', '//li[@class="listText"]', function (result) {
@@ -132,7 +135,7 @@ module.exports = {
             .useCss()
 
         // Cleanup - Delete remaining employees used in these tests
-        employeeManagerPage.click('@clearButton')
+     /*   employeeManagerPage.click('@clearButton')
         clickByText(browser, 'Cooper Smith')
         clickByText(browser, ' Delete ')
         browser.acceptAlert()
@@ -144,6 +147,6 @@ module.exports = {
         clickByText(browser, 'Sean Smith')
         clickByText(browser, ' Delete ')
         browser.acceptAlert()
-        browser.pause(2000)
+        browser.pause(2000) */
     },
 }

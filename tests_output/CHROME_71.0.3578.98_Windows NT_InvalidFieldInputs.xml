@@ -5,9 +5,9 @@
 
   <testsuite name="InvalidFieldInputs"
     errors="2" failures="1" hostname="" id="" package="InvalidFieldInputs" skipped="0"
-    tests="1" time="33.11" timestamp="Tue, 22 Jan 2019 01:29:47 GMT">
+    tests="1" time="33.35" timestamp="Mon, 28 Jan 2019 19:53:03 GMT">
   
-    <testcase name="QOBB-62 Test invalid value types for each field - Test 1" classname="InvalidFieldInputs" time="33.11" assertions="39">
+    <testcase name="QOBB-62 Test invalid value types for each field - Test 1" classname="InvalidFieldInputs" time="33.35" assertions="39">
 
     
 
@@ -47,9 +47,9 @@
 
     
 
-      <failure message="Testing if element &lt;(//div)[text()=&#34;The email must be a valid 30 character email address. &#34;]&gt; is visible. Element could not be located.">    at QOBB-62 Test invalid value types for each field - Test 1.testData.invalidFieldValues.forEach.test (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2\tests\InvalidFieldInputs.js:65:32)
+      <failure message="Testing if element &lt;(//div)[text()=&#34;The email must be a valid 30 character email address. &#34;]&gt; is visible. Element could not be located.">    at QOBB-62 Test invalid value types for each field - Test 1.testData.invalidFieldValues.forEach.test (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2-API\tests\InvalidFieldInputs.js:62:32)
     at Array.forEach (&lt;anonymous&gt;)
-    at Object.QOBB-62 Test invalid value types for each field - Test 1 (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2\tests\InvalidFieldInputs.js:32:37)</failure>
+    at Object.QOBB-62 Test invalid value types for each field - Test 1 (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2-API\tests\InvalidFieldInputs.js:29:37)</failure>
 
     
 
@@ -75,9 +75,9 @@
 
     
 
-      <failure message="Testing if element &lt;(//div)[text()=&#34;The email must be a valid 30 character email address. &#34;]&gt; is visible. Element could not be located.">    at QOBB-62 Test invalid value types for each field - Test 1.testData.invalidFieldValues.forEach.test (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2\tests\InvalidFieldInputs.js:65:32)
+      <failure message="Testing if element &lt;(//div)[text()=&#34;The email must be a valid 30 character email address. &#34;]&gt; is visible. Element could not be located.">    at QOBB-62 Test invalid value types for each field - Test 1.testData.invalidFieldValues.forEach.test (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2-API\tests\InvalidFieldInputs.js:62:32)
     at Array.forEach (&lt;anonymous&gt;)
-    at Object.QOBB-62 Test invalid value types for each field - Test 1 (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2\tests\InvalidFieldInputs.js:32:37)</failure>
+    at Object.QOBB-62 Test invalid value types for each field - Test 1 (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2-API\tests\InvalidFieldInputs.js:29:37)</failure>
 
     
 

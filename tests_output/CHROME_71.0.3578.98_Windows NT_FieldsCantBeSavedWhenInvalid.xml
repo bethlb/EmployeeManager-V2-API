@@ -5,36 +5,38 @@
 
   <testsuite name="FieldsCantBeSavedWhenInvalid"
     errors="0" failures="4" hostname="" id="" package="FieldsCantBeSavedWhenInvalid" skipped="0"
-    tests="4" time="24.30" timestamp="Tue, 22 Jan 2019 02:16:40 GMT">
+    tests="4" time="27.22" timestamp="Mon, 28 Jan 2019 19:37:12 GMT">
   
-    <testcase name="QOBB-68 Name invalid; other fields valid" classname="FieldsCantBeSavedWhenInvalid" time="6.307" assertions="2">
+    <testcase name="QOBB-68 Name invalid; other fields valid" classname="FieldsCantBeSavedWhenInvalid" time="8.674" assertions="3">
 
-      <failure message="Expected element &lt;button[name=&#34;save&#34;]&gt; to have attribute &#34;disabled&#34; - attribute was not found">    at checkDisabled (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2\testAssets\functions.js:81:25)
-    at Object.QOBB-68 Name invalid; other fields valid (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2\tests\FieldsCantBeSavedWhenInvalid.js:22:9)</failure>
+    
+
+      <failure message="Expected element &lt;button[name=&#34;save&#34;]&gt; to have attribute &#34;disabled&#34; - attribute was not found">    at module.exports (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2-API\functions\checkDisabled.js:4:25)
+    at Object.QOBB-68 Name invalid; other fields valid (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2-API\tests\FieldsCantBeSavedWhenInvalid.js:27:9)</failure>
 
     
     </testcase>
   
-    <testcase name="QOBB-68 Phone invalid; other fields valid" classname="FieldsCantBeSavedWhenInvalid" time="6.087" assertions="2">
+    <testcase name="QOBB-68 Phone invalid; other fields valid" classname="FieldsCantBeSavedWhenInvalid" time="5.927" assertions="2">
 
-      <failure message="Expected element &lt;button[name=&#34;save&#34;]&gt; to have attribute &#34;disabled&#34; - attribute was not found">    at checkDisabled (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2\testAssets\functions.js:81:25)
-    at Object.QOBB-68 Phone invalid; other fields valid (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2\tests\FieldsCantBeSavedWhenInvalid.js:30:9)</failure>
-
-    
-    </testcase>
-  
-    <testcase name="QOBB-68 Email invalid; other fields valid" classname="FieldsCantBeSavedWhenInvalid" time="5.987" assertions="2">
-
-      <failure message="Expected element &lt;button[name=&#34;save&#34;]&gt; to have attribute &#34;disabled&#34; - attribute was not found">    at checkDisabled (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2\testAssets\functions.js:81:25)
-    at Object.QOBB-68 Email invalid; other fields valid (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2\tests\FieldsCantBeSavedWhenInvalid.js:38:9)</failure>
+      <failure message="Expected element &lt;button[name=&#34;save&#34;]&gt; to have attribute &#34;disabled&#34; - attribute was not found">    at module.exports (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2-API\functions\checkDisabled.js:4:25)
+    at Object.QOBB-68 Phone invalid; other fields valid (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2-API\tests\FieldsCantBeSavedWhenInvalid.js:35:9)</failure>
 
     
     </testcase>
   
-    <testcase name="QOBB-68 Title invalid; other fields valid" classname="FieldsCantBeSavedWhenInvalid" time="5.918" assertions="2">
+    <testcase name="QOBB-68 Email invalid; other fields valid" classname="FieldsCantBeSavedWhenInvalid" time="6.194" assertions="2">
 
-      <failure message="Expected element &lt;button[name=&#34;save&#34;]&gt; to have attribute &#34;disabled&#34; - attribute was not found">    at checkDisabled (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2\testAssets\functions.js:81:25)
-    at Object.QOBB-68 Title invalid; other fields valid (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2\tests\FieldsCantBeSavedWhenInvalid.js:46:9)</failure>
+      <failure message="Expected element &lt;button[name=&#34;save&#34;]&gt; to have attribute &#34;disabled&#34; - attribute was not found">    at module.exports (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2-API\functions\checkDisabled.js:4:25)
+    at Object.QOBB-68 Email invalid; other fields valid (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2-API\tests\FieldsCantBeSavedWhenInvalid.js:43:9)</failure>
+
+    
+    </testcase>
+  
+    <testcase name="QOBB-68 Title invalid; other fields valid" classname="FieldsCantBeSavedWhenInvalid" time="6.428" assertions="2">
+
+      <failure message="Expected element &lt;button[name=&#34;save&#34;]&gt; to have attribute &#34;disabled&#34; - attribute was not found">    at module.exports (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2-API\functions\checkDisabled.js:4:25)
+    at Object.QOBB-68 Title invalid; other fields valid (C:\Users\bethl_000\Documents\Beth\Learning\DevMountain\EmployeeManager-V2-API\tests\FieldsCantBeSavedWhenInvalid.js:51:9)</failure>
 
     
     </testcase>

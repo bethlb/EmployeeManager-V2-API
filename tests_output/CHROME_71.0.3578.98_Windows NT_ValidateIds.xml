@@ -5,9 +5,9 @@
 
   <testsuite name="ValidateIds"
     errors="0" failures="0" hostname="" id="" package="ValidateIds" skipped="0"
-    tests="1" time="5.635" timestamp="Tue, 22 Jan 2019 02:19:15 GMT">
+    tests="1" time="5.078" timestamp="Mon, 28 Jan 2019 23:52:59 GMT">
   
-    <testcase name="QOBB-75 Check for valid ID" classname="ValidateIds" time="5.635" assertions="21">
+    <testcase name="QOBB-75 Check for valid ID" classname="ValidateIds" time="5.078" assertions="21">
 
     
 

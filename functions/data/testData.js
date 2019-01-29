@@ -154,7 +154,7 @@ module.exports = {
             results: ['Cooper Smith', 'Cooper Jones']
         },
         {
-            input: 'Manager',
+            input: 'Worker',
             results: ['Cooper Smith', 'Brett Smith', 'Cooper Jones']
         },
         {

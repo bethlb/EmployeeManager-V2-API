@@ -1,18 +1,17 @@
-var employeeManagerPage = {}
-
-var functions = require('../testAssets/functions')
-var testData = require('../testAssets/testData')
-
-let clickByText = functions.clickByText
-let setFieldValue = functions.setFieldValue
-let verifyFieldValue = functions.verifyFieldValue
-let verifyEmployeeInList = functions.verifyEmployeeInList
+let employeeManagerPage = {}
+let testData = require('../functions/data/testData')
+let clickByText = require('../functions/clickByText')
+let setFieldValue = require('../functions/setFieldValue')
+let verifyFieldValue = require('../functions/verifyFieldValue')
+let verifyEmployeeInList = require('../functions/verifyEmployeeInList')
 
 module.exports = {
     beforeEach: browser => {
         employeeManagerPage = browser.page.EmployeeManagerPageObject()
         employeeManagerPage.navigate()
             .waitForElementVisible('@employee1', 8000)
+        // Delete New Employee if one is in progress    
+            employeeManagerPage.deleteNewEmployee()
     },
 
     after: browser => {
@@ -21,8 +20,6 @@ module.exports = {
 
     'QOBB-60 Test all valid value types for each field': browser => {
         // https://dmutah.atlassian.net/browse/QOBB-60
-
-        employeeManagerPage.deleteNewEmployee()
 
         testData.validFieldValues.forEach(test => {
             employeeManagerPage

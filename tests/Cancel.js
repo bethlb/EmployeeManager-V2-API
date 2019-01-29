@@ -1,14 +1,18 @@
-var employeeManagerPage = {}
-
-var functions = require('../testAssets/functions')
-
-let clickByText = functions.clickByText
-let setForm = functions.setForm
-let getForm = functions.getForm
-let verifyForm = functions.verifyForm
-let employee = {}
+let employeeManagerPage = {}
+let clickByText = require('../functions/clickByText')
+let setForm = require('../functions/setForm')
+let verifyForm = require('../functions/verifyForm')
+// let employee = {}
 
 module.exports = {
+
+    before: browser => {
+        employeeManagerPage = browser.page.EmployeeManagerPageObject()
+        employeeManagerPage.navigate()
+            .waitForElementVisible('@employee1', 8000)
+        //  If New Employee already in progress, delete it
+            .deleteNewEmployee()
+    },    
     beforeEach: browser => {
         employeeManagerPage = browser.page.EmployeeManagerPageObject()
         employeeManagerPage.navigate()
@@ -21,8 +25,6 @@ module.exports = {
     'QOBB-60 Cancel prior to Save': browser => {
         // https://dmutah.atlassian.net/browse/QOBB-60
 
-        // Delete "New Employee" if one already in progress    
-        employeeManagerPage.deleteNewEmployee()
         // Add new employee for this test
         clickByText(browser, ' + Add Employee ')
         clickByText(browser, 'New Employee')

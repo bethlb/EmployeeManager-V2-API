@@ -1,12 +1,15 @@
-var employeeManagerPage = {}
-
-var functions = require('../testAssets/functions')
-
-let clickByText = functions.clickByText
-let setForm = functions.setForm
-let checkDisabled = functions.checkDisabled
+let employeeManagerPage = {}
+let setForm = require('../functions/setForm')
+let checkDisabled = require('../functions/checkDisabled')
 
 module.exports = {
+    before: browser => {
+        employeeManagerPage = browser.page.EmployeeManagerPageObject()
+        employeeManagerPage.navigate()
+            .waitForElementVisible('@employee1', 8000)
+        //  If New Employee already in progress, delete it
+            .deleteNewEmployee()
+    },
     beforeEach: browser => {
         employeeManagerPage = browser.page.EmployeeManagerPageObject()
         employeeManagerPage.navigate()
@@ -22,8 +25,7 @@ module.exports = {
 
         employeeManagerPage.click('@employee1')
         setForm(employeeManagerPage, {name: ' ', phone: '1234567890', email: 'abc@test.com', title: 'Manager'})
-        browser.pause(5000)
-        checkDisabled(employeeManagerPage, '@saveButton')            
+        checkDisabled(employeeManagerPage, '@saveButton')        
     },
     
     'QOBB-67 Every field must be populated to Save - Missing phone value': browser => {

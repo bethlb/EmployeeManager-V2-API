@@ -5,9 +5,9 @@
 
   <testsuite name="ValidFieldInputs"
     errors="0" failures="0" hostname="" id="" package="ValidFieldInputs" skipped="0"
-    tests="1" time="46.88" timestamp="Tue, 22 Jan 2019 01:28:16 GMT">
+    tests="1" time="47.94" timestamp="Mon, 28 Jan 2019 23:57:08 GMT">
   
-    <testcase name="QOBB-60 Test all valid value types for each field" classname="ValidFieldInputs" time="46.88" assertions="16">
+    <testcase name="QOBB-60 Test all valid value types for each field" classname="ValidFieldInputs" time="47.94" assertions="16">
 
     
 

@@ -1,20 +1,19 @@
-var employeeManagerPage = {}
-
-var functions = require('../testAssets/functions')
-var testData = require('../testAssets/testData')
-
-let clickByText = functions.clickByText
-let setFieldValue = functions.setFieldValue
+let employeeManagerPage = {}
+let clickByText = require('../functions/clickByText')
+let setFieldValue = require('../functions/setFieldValue')
+let testData = require('../functions/data/testData')
 
 module.exports = {
     beforeEach: browser => {
         employeeManagerPage = browser.page.EmployeeManagerPageObject()
         employeeManagerPage.navigate()
-            // Note - .waitForElementVisible failed in tests two and on when used with nigthwatch 
-            // "skip_testcases_on_fail" = fales.  Instead used pause before each test.  
-            // .waitForElementVisible('.titleText', 5000)
-            // employeeManagerPage.api.pause(2000)
+        // Note - .waitForElementVisible failed in tests two and on when used with nigthwatch 
+        // "skip_testcases_on_fail" = fales.  Instead used pause before each test.  
+        // .waitForElementVisible('.titleText', 5000)
+        // employeeManagerPage.api.pause(2000)
             .waitForElementVisible('@employee1', 8000)
+        //  If New Employee already in progress, delete it
+             .deleteNewEmployee()    
 
     },
     after: browser => {
@@ -24,8 +23,6 @@ module.exports = {
     'QOBB-62 Test invalid value types for each field - Test 1': browser => {
         // https://dmutah.atlassian.net/browse/QOBB-62
 
-        // Delete "New Employee" if one already exists and recreate for this test   
-        employeeManagerPage.deleteNewEmployee()
         clickByText(browser, ' + Add Employee ')
         clickByText(browser, 'New Employee')
 

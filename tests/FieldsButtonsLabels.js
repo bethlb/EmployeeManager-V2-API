@@ -1,11 +1,5 @@
-var employeeManagerPage = {}
-
-var clickByText = (browser, text) => {
-    browser
-        .useXpath()
-        .click(`//*[text()="${text}"]`)
-        .useCss()
-}
+let employeeManagerPage = {}
+let clickByText = require('../functions/clickByText')
 
 module.exports = {
     beforeEach: browser => {

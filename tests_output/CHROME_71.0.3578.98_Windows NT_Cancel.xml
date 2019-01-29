@@ -5,9 +5,11 @@
 
   <testsuite name="Cancel"
     errors="0" failures="0" hostname="" id="" package="Cancel" skipped="0"
-    tests="2" time="48.21" timestamp="Tue, 22 Jan 2019 01:23:31 GMT">
+    tests="2" time="50.13" timestamp="Mon, 28 Jan 2019 19:29:49 GMT">
   
-    <testcase name="QOBB-60 Cancel prior to Save" classname="Cancel" time="23.58" assertions="9">
+    <testcase name="QOBB-60 Cancel prior to Save" classname="Cancel" time="25.64" assertions="10">
+
+    
 
     
 
@@ -28,7 +30,7 @@
     
     </testcase>
   
-    <testcase name="QOBB-60 Cancel after Save" classname="Cancel" time="24.63" assertions="9">
+    <testcase name="QOBB-60 Cancel after Save" classname="Cancel" time="24.49" assertions="9">
 
     
 

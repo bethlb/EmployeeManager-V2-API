@@ -5,9 +5,19 @@
 
   <testsuite name="Search"
     errors="0" failures="0" hostname="" id="" package="Search" skipped="0"
-    tests="3" time="95.92" timestamp="Tue, 22 Jan 2019 02:26:00 GMT">
+    tests="3" time="28.89" timestamp="Mon, 28 Jan 2019 23:51:30 GMT">
   
-    <testcase name="QOBB-60 Search results correct" classname="Search" time="54.24" assertions="27">
+    <testcase name="QOBB-60 Search results correct" classname="Search" time="8.820" assertions="32">
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -64,7 +74,7 @@
     
     </testcase>
   
-    <testcase name="QOBB-60 Verify modified employee which does not match search criteria is not in Search Results" classname="Search" time="9.501" assertions="3">
+    <testcase name="QOBB-60 Verify modified employee which does not match search criteria is not in Search Results" classname="Search" time="9.441" assertions="3">
 
     
 
@@ -73,7 +83,7 @@
     
     </testcase>
   
-    <testcase name="QOBB-60 Verify deleted employee from Search Results is no longer in Search Results" classname="Search" time="32.18" assertions="3">
+    <testcase name="QOBB-60 Verify deleted employee from Search Results is no longer in Search Results" classname="Search" time="10.63" assertions="3">
 
     
 

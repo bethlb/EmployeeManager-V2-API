@@ -5,9 +5,9 @@
 
   <testsuite name="GeneralEdit"
     errors="0" failures="0" hostname="" id="" package="GeneralEdit" skipped="0"
-    tests="2" time="8.437" timestamp="Tue, 22 Jan 2019 01:19:18 GMT">
+    tests="2" time="7.093" timestamp="Mon, 28 Jan 2019 19:42:04 GMT">
   
-    <testcase name="QOBB-58 Name, Phone and Title can be edited; Save and Cancel active when fields are edited" classname="GeneralEdit" time="7.646" assertions="13">
+    <testcase name="QOBB-58 Name, Phone and Title can be edited; Save and Cancel active when fields are edited" classname="GeneralEdit" time="6.373" assertions="13">
 
     
 
@@ -36,7 +36,7 @@
     
     </testcase>
   
-    <testcase name="QOBB-58 ID field cannot be edited; Save and Cancel not active for ID" classname="GeneralEdit" time="0.7910" assertions="4">
+    <testcase name="QOBB-58 ID field cannot be edited; Save and Cancel not active for ID" classname="GeneralEdit" time="0.7200" assertions="4">
 
     
 

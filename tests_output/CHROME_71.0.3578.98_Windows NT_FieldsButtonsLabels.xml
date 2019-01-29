@@ -5,9 +5,9 @@
 
   <testsuite name="FieldsButtonsLabels"
     errors="0" failures="0" hostname="" id="" package="FieldsButtonsLabels" skipped="0"
-    tests="1" time="12.56" timestamp="Tue, 22 Jan 2019 00:34:02 GMT">
+    tests="1" time="7.299" timestamp="Mon, 28 Jan 2019 19:45:03 GMT">
   
-    <testcase name="QOB-55 All expected fields, labels and buttons are present" classname="FieldsButtonsLabels" time="12.56" assertions="11">
+    <testcase name="QOB-55 All expected fields, labels and buttons are present" classname="FieldsButtonsLabels" time="7.299" assertions="11">
 
     
 
